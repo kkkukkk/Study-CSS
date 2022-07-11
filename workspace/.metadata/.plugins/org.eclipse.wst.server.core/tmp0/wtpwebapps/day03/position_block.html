@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<!--
+	position
+	
+	1. relative
+	2. absolute
+		부모중에서 relative position을 가지고 있는 요소를 기준으로 위치를 변경시킨다.
+		만약 어떠한 부모도 relative가 없다면 body태그 기준으로 위치를 변경시킨다.
+		부모의 relative를 찾았다면 해당 부모 태그의 내용이 없다면 영역은 사라지고, background에 대한 속성은 작성해도 출력되지 않는다.	
+		부모의 태그 내용이 없지만 background와 같은 영역을 표현하고 싶다면 직접 height를 주면 된다.
+-->
+<style>
+	body div:first-child {
+		color: green;
+		position: relative;
+		height: 25px;
+		background: red;
+		top: 25px;
+	}
+	
+	/* +연산은 해당 연산자 앞에 있는 선택자 다음 태그 1개를 의미한다. */
+	body div:first-child + div {
+		color: orange;
+	}
+	
+	/* ~연산은 해당 연산자 앞에 있는 선택자 다음 태그부터 마지막 다음 태그까지를 의미한다. */
+/*  	body div:first-child ~ div {
+		color: orange;
+	} */
+	
+	/* 
+		자식요소에 대한 선택자 first-child, last-child가 nth-child(n)보다 우선순위가 높고
+		+, ~ 연산자도 우선순위가 더 높다.
+		nth-child(n)를 사용하고 싶다면, 이외의 다른 자식요소 선택자 및 +, ~ 연산자가 이미 있는 지 확인하고 사용해야 한다.
+	 */
+	div:nth-child(2) {
+		color: black;
+	}
+	
+	div#cookie span {
+		position: absolute;
+		right: 0;
+	}
+	
+	div#hot, div#cake, div#coffee {
+		height: 25px;
+		position: relative;
+	}
+	
+	/* 
+		z-index : 겹쳐있을 때 z축 수치를 조정할 수 있다.
+		0이 default이며, 겹쳐질 때에는 코드 작성 순서를 기준으로 가장 마지막인 태그가 가장 앞에 위치한다.
+		이를 변경하고자 할 때에는 z-index의 숫자를 키워줌으로써 앞쪽에 위치할 수 있게 하고,
+		z-index의 숫자를 줄여줌으로써 뒷쪽에 위치하도록 할 수 있다. 
+	*/
+ 	div#hot {
+		background: yellow;
+	}
+	
+	div#cake {
+		background: pink;
+		top: -25px;
+		z-index: 1;
+	}
+	
+	div#coffee {
+		background: orange;
+		top: -50px;
+	}
+	
+	div#hot strong {
+		position: absolute;
+	}
+	
+	div#cake strong {
+		position: absolute;
+	}
+	
+	div#coffee span {
+		position: absolute;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="cookie">
+		<span>쿠키</span>
+	</div>
+	<div id="hot">
+		<strong>핫초코</strong>
+	</div>
+	<div id="cake">
+		<strong>케이크</strong>
+	</div>
+	<div id="coffee">
+		<span>아이스커피</span>
+	</div>
+</body>
+</html>
+
+

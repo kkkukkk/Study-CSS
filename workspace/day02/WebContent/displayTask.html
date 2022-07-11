@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display 실습</title>
+<style>
+	div#flex-wrap {
+		display: flex;
+		justify-content: center; 
+	}
+	
+	div#float-wrap {
+		display: inline-block;
+	}
+	
+	div#float-wrap div {
+		float: left;
+	}
+	
+	div#center-wrap {
+		text-align: center;
+	}
+	
+	div#table-wrap {
+		display: table;
+		table-layout: fixed;
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	div#table-wrap div {
+		display: table-cell;
+		overflow: hidden;
+	}
+	
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="flex-wrap">
+		<div><img src="img1.jpg"></div>
+		<div><img src="img2.jpg"></div>
+		<div><img src="img3.jpg"></div>
+	</div>
+	
+	<div id="center-wrap">
+		<div id="float-wrap">
+			<div><img src="img1.jpg"></div>
+			<div><img src="img2.jpg"></div>
+			<div><img src="img3.jpg"></div>
+		</div>
+	</div>
+	
+	<div id="table-wrap">
+			<div><img src="img1.jpg"></div>
+			<div><img src="img2.jpg"></div>
+			<div><img src="img3.jpg"></div>
+			<div><img src="img1.jpg"></div>
+			<div><img src="img2.jpg"></div>
+			<div><img src="img3.jpg"></div>
+			<div><img src="img1.jpg"></div>
+			<div><img src="img2.jpg"></div>
+			<div><img src="img3.jpg"></div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

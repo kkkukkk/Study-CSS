@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>스타일 우선순위(cascading)</title>
+<link rel="stylesheet" href="cascadingCss.css">
+<style>
+
+	/* 
+		important 사용 방법
+		
+		속성명: 속성값 !important; 
+	*/
+	
+	
+	/* 사과가 녹색으로 나오게 하기 */
+	div.apple {
+		color: green;
+	}
+
+	.apple {
+		color: red;
+	}
+	/* 바나나가 노란색으로 나오게 하기 */
+	
+/* 	p#banana {
+		color: yellow;
+		display: inline;
+		background: black;
+	} */
+	
+	#banana {
+		color: black !important;
+	}
+	
+</style>
+</head>
+<body>
+	<p id="banana" class="apple">바나나</p>
+	<div class="apple">사과</div>
+</body>
+</html>

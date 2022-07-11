@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 내부 스타일 시트</title>
+<style>
+	ul {
+		list-style-type: square;
+	}
+	
+	/* 직계 자식태그에만 스타일 적용 */
+/* 	#test > p {
+		color: red;
+	} */
+	
+	/* 모든 자식태그에 스타일 적용 */
+/* 	#test p {
+		color: red;
+	} */
+	
+	
+ 	#test > li {
+		color: red;
+	}
+	
+</style>
+</head>
+<body>
+
+<!-- 	<div id="test">할머니
+		<p>한동석</p> 딸
+		
+		<div>딸
+			<p>이순신</p>손녀
+		</div>
+	</div> -->
+
+	<ul id="test">
+		<li>
+			한동석
+		</li>
+		<ul>
+			<li>이순신</li>
+		</ul>
+	</ul>
+</body>
+</html>
+
+
+
+
+

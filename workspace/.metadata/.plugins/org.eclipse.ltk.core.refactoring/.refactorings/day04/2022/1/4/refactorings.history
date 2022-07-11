@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;day04/WebContent/displayTest.html&apos; to &apos;mediaQuery_task.html&apos;" description="Rename resource &apos;displayTest.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/displayTest.html" name="mediaQuery_task.html" stamp="1642387791484" updateReferences="true"/>
+</session>

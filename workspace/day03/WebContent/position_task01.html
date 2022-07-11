@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thug life</title>
+<style>
+	div.img {
+		position: relative;
+		background-image: url("http://gangnam.koreaisacademy.com/renewal2016/img/tch/teacher007.png");
+		background-size: 100% 100%;/* background-size: 좌우 상하 */
+		background-position: center;
+		width: 200px;
+		height: 315px;
+		margin: 0 auto;
+	}
+	
+	div.sunglasses {
+		position: absolute;
+		background-image: url("sunglasses.png");
+		background-size: 100% 100%;
+		background-position: center;
+		width: 100px;
+		height: 80px;
+		left: 31px;
+    	top: 66px;
+	}
+	
+	div.candy {
+		position: absolute;
+		background-image: url("cigarette.png");
+		background-size: 100% 100%;
+		background-position: center;
+		width: 70px;
+		height: 75px;
+		top: 123px;
+    	left: 3px;
+	}
+	
+</style>
+</head>
+<body>
+	<!-- 기존 사진에 선그라스와 사탕을 적절한 위치에 배치시켜라 -->
+	<!-- 반드시 position의 relative와 absolute를 사용한다. -->
+	<div id="wrap">
+		<div class="img">
+			<div class="sunglasses"></div>
+			<div class="candy"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>레이아웃</title>
+<style>
+
+   body {
+      background: #f3f7fa;
+      color: #808080;
+   }
+
+   div.flex-container {
+      display: flex;
+      justify-content: space-evenly;
+   }
+   
+   div#wrap {
+      display: table;
+      border-spacing: 10px;
+      margin: 0 auto;
+   }
+   
+   div.row {
+      display: table-row;
+   }
+   
+   div.col {
+      display: table-cell;
+      background: white;
+      width: 230px;
+      height: 300px;
+      margin-right: 10px;
+   }
+   
+   img {
+      width: 90px;
+      height: 90px;
+   }
+   
+   div.img {
+      text-align: center;
+      margin-bottom: 22px;
+      padding-top: 45px;
+   }
+   
+   div.title {
+      text-align: center;
+   }
+   
+   p.content {
+      font-size: 12px;
+   }
+   
+   p.number {
+      text-align: center;
+      font-size: 26px;
+   }
+   
+   p.new-item-number {
+      color: #ff6b00;
+   }
+   
+   h2.title{
+      color: #303030;
+       font-size: 15px;
+   }
+   
+   div.shop-content {
+      color: #909090;
+       font-size: 13px;
+   }
+   
+   div.shop-content p {
+      text-align: center;
+      margin: 0;
+   }
+   
+   div.myShop{
+	   	display: flex;
+	    justify-content: center;
+   }
+   
+   div.myShop img{
+      width: 11px;
+      height: 11px;
+   }
+   
+   /* 부모 요소 안에 자식 요소까지 작성한 뒤 :last-child를 붙인다 */
+   div.myShop div:last-child {
+		line-height: 43.5px;
+		padding-left: 3px;
+		color: yellow;
+   }
+   
+   div.allProducts-wrap, div.myShop-wrap {
+      width: 50%;
+       border: 1px solid #edeff0;
+       text-align: center;
+       font-size: 11px;
+       color: #909090;
+       line-height: 40px;
+   }
+  
+	div.allProducts-wrap {
+		border-left: none;
+	}
+	
+	div.myShop-wrap {
+		border-right: none;
+	}
+   
+   div.div-button-wrap {
+      padding-top: 31px;
+   }
+   
+</style>
+</head>
+<body>
+   <div id="wrap">
+      <div class="row">
+         <div class="col">
+            <div class="img">
+               <img src="https://www.sta1.com/_nuxt/img/icon-myshop@3x.00de977.png">
+            </div>
+            <div class="title">
+               <span>MY</span>
+               <strong>SHOP</strong>
+            </div>
+            <div class="flex-container">
+               <div>
+                  <p class="content shop">SHOP</p>
+                  <p class="number shop-number">0</p>
+               </div>
+               <div>
+                  <p class="content new-item">NEW ITEM</p>
+                  <p class="number new-item-number">0</p>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2019/06/1559710017170_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">아뜨랑스</h2>
+            </div>
+            <div class="shop-content">
+               <p>20대,30대</p>
+               <p>러블리,럭셔리·명품</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2019/02/1550650379618_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">젝시믹스</h2>
+            </div>
+            <div class="shop-content">
+               <p>10대,20대,30대</p>
+               <p>피트니스</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2019/05/1558940655652_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">안나키즈</h2>
+            </div>
+            <div class="shop-content">
+               <p>30대</p>
+               <p>미시스타일,심플베이직</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2019/05/1559199458372_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">리린</h2>
+            </div>
+            <div class="shop-content">
+               <p>30대</p>
+               <p>미시스타일,페미닌</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2019/05/1558940637449_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">리틀블랙</h2>
+            </div>
+            <div class="shop-content">
+               <p>30대</p>
+               <p>모던시크,미시스타일</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2018/04/1523865657097_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">스토리나인</h2>
+            </div>
+            <div class="shop-content">
+               <p>30대</p>
+               <p>미시스타일,심플베이직</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2019/05/1559199438213_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">로즈베이</h2>
+            </div>
+            <div class="shop-content">
+               <p>30대</p>
+               <p>미시스타일,심플베이직</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/shop/logo/2017/06/1498199319872_mi.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">난닝구</h2>
+            </div>
+            <div class="shop-content">
+               <p>20대,30대</p>
+               <p>유니크,심플베이직</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="img">
+               <img src="https://image-proxy.sta1.com/_up/store/2020/01/23/1579748891347.jpg">
+            </div>
+            <div class="title">
+               <h2 class="title">베니토</h2>
+            </div>
+            <div class="shop-content">
+               <p>20대,30대</p>
+               <p>럭셔리·명품,페미닌</p>
+            </div>
+            <div class="flex-container div-button-wrap">
+               <div class="allProducts-wrap button-wrap">
+                  <a class="allProducts">전체상품</a>
+               </div>
+               <div class="myShop-wrap button-wrap">
+                  <div class="myShop">
+                    	<div><a>마이샵</a></div> 
+                     	<div>
+                     		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE5JREFUeNrs1jEKACAMQ9FGvP8ZclNdxbEWUfiZOpUHGVrZjoOMZVZ2SYsHAgIECBAgQHyJ6Ns5rjrr1JGuQ0UV8FmBAAECBAgQ1zMFGABYogYlJB84mgAAAABJRU5ErkJggg==">
+                     	</div>
+                  </div>
+	               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

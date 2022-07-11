@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position - 실습</title>
+<style>
+	div#wrap {
+		display: inline-block;
+	}
+
+	div.input-pw, div.input-email {
+		position: relative;
+	}
+	
+	div img, div span {
+		position: absolute;
+	}
+	
+	div img {
+		left: 145px;
+	}
+	
+	div span {
+		left: 85px;
+	}
+	
+	body div:first-child {
+		text-align: center;
+	}
+	
+</style>
+</head>
+<body>
+	<div>
+		<div id="wrap">
+			<div class="input-pw">
+				<input type="password" placeholder="비밀번호" maxlength="10">
+				<img src="locker.png" width="25px">
+			</div>
+			<div class="input-email">
+				<input type="email" placeholder="이메일" maxlength="10">
+				<span>@mail.com</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

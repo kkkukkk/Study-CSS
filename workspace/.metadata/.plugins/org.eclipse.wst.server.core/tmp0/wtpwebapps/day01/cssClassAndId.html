@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아이디와 클래스</title>
+<style>
+	#blue {
+		color: blue;
+	}
+
+	.red {
+		color: red;
+	}
+	
+	.blue {
+		color: blue;
+	}
+	
+	#red {
+		color: red;
+	}
+	
+</style>
+</head>
+<body>
+	<p class="blue red">banana</p>
+	<p id="red blue">파랑</p><!-- 아이디 여러 개 작성으로 인한 오류 -->
+	<p class="red" id="blue">파랑</p><!-- id가 더 구체적이기 때문에 class보다 우선 순위가 높다. -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

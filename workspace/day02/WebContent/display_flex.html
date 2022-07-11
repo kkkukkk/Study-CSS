@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display - flex</title>
+<style>
+	div {
+		border: 1.5px solid black;
+	}
+	
+	div.wrap {
+		display: flex; /* 개발자 모드에서 다양한 정렬을 테스트한 후 원하는 속성을 선택하여 사용한다. */
+		justify-content: center;
+	}
+
+	div#container, div.wrap {
+		border: none;	
+	}	
+</style>
+</head>
+<body>
+	<div id="container">
+		<div class="wrap">
+			<div>1행 →</div>
+			<div>1열</div>
+			<div>2열</div>
+			<div>3열</div>
+			<div>4열</div>
+		</div>
+		<div class="wrap">
+			<div>2행 →</div>
+			<div>1열</div>
+			<div>2열</div>
+			<div>3열</div>
+			<div>4열</div>
+		</div>
+		<div class="wrap">
+			<div>3행 →</div>
+			<div>1열</div>
+			<div>2열</div>
+			<div>3열</div>
+			<div>4열</div>
+		</div>
+	</div>
+</body>
+</html>

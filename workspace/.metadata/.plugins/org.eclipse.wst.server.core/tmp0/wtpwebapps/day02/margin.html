@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>바깥 여백</title>
+<style>
+	div#div1 {
+/* 		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 30px;
+		margin-right: 30px; */
+		margin: 30px;
+		border: 1px solid #000;
+	}
+	
+	div#div2 {
+		margin-top: 60px;/* 위의 요소와 바깥여백이 겹친다면 +되지 않는다. */
+		margin-bottom: 30px;
+		border: 1px solid #324;
+	}
+	
+	div#div3 {
+		margin-top: 20px;
+		margin-right: 30px;
+		border: 1px solid #e10;
+	}
+	
+	div#div4 {
+		/* margin: 상하값 좌우값 */
+		margin: 30px 0;
+	}
+	
+	div#div5 {
+		/* margin: 위 오른쪽 아래 왼쪽 */
+		margin: 0 0 20px 30px;
+	}
+	
+	/* 바깥 여백은 상하에서만 겹침현상이 발생하고, 좌우에서는 겹치지 않는다. */
+	div#div6 {
+		display: inline-block;
+		border: 1px solid black;
+		margin-right: 30px;
+	}
+
+	div#div7 {
+		display: inline-block;
+		border: 1px solid black;
+		margin-left: 30px;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="div1">
+			안녕하세요 DIV1입니다.
+		</div>
+		<div id="div2">
+			안녕하세요 DIV2입니다.
+		</div>
+		<div id="div3">
+			안녕하세요 DIV3입니다.
+		</div>
+		<div id="div4">
+			안녕하세요 DIV4입니다.
+		</div>
+		<div id="div5">
+			안녕하세요 DIV5입니다.
+		</div>
+		<div id="div6">
+			안녕하세요 DIV6입니다.
+		</div>
+		<div id="div7">
+			안녕하세요 DIV7입니다.
+		</div>
+	</div>
+</body>
+</html>

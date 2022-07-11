@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>시맨틱 태그 - 실습</title>
+<style>
+	body {
+		background: #e0f2f1;
+	}
+	
+	div#wrap {
+		width: 1200px; 
+		margin: 0 auto;
+	}
+	
+	header {
+		width: 100%;
+		height: 150px;
+		background: #fff9c4;
+	}
+	
+	aside {
+		float: left;
+		width: 30%;
+		height: 700px;
+		background: #1e88e5;
+	}
+	
+	section {
+		float: left;
+		width: 70%;
+		height: 700px;
+		background: #f44336;
+	}
+	
+	footer {
+		clear: both;
+		width: 100%;
+		height: 150px;
+		background: #8bc34a;
+	}
+	
+	/* 노트북 : 1220px */
+	@media (max-width: 1220px){
+		div#wrap {width: 95%;}
+	}
+	
+	/* 테블릿 : 768px */
+	@media (max-width: 768px){
+		div#wrap {width:  100%;}
+		header{height: 300px;}
+		aside{height: 900px;}
+		section{height: 900px;}
+		footer{height: 300px;}
+	}
+	
+	/* 모바일 : 480px */
+	@media (max-width:480px){
+		div#wrap{width: 100%}
+		header{height: 300px;}
+		aside{float: none; width: 100%; height: 300px;}
+		section{float:none; width: 100%; height: 300px;}
+		footer{height: 300px;}
+	}
+	
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<header></header>
+		<aside></aside>
+		<section></section>
+		<footer></footer>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--
+	CSS 속성은 자동으로 상속되는 속성과 강제로 상속해야 하는 속성이 있다.
+-->
+<title>CSS 상속</title>
+<style>
+	body {
+		color: green;
+	}
+
+	/* 
+		div 태그에 padding을 상하좌우 모두 20px을 준다.
+		div 태그의 자식 요소인 h와 p태그에 padding을 상속해준다. 
+	*/
+
+	.inherit-test {
+		color: red;
+		border: 3px dashed #30f;/* 색상을 RGB로 표현할 때에는 앞에 #을 붙인다. */
+		padding: 20px;
+	}
+	
+	button {
+		color: inherit;/* 자동으로 상속받지 못하는 속성은 직접 inherit값을 작성하여 직계 부모의 스타일을 그대로 전달받도록 한다. */
+		padding: inherit;
+	}
+	
+	/* h1태그와 p태그에 div의 테두리를 상속받아서 구현한다. */
+	h1 {
+		border: inherit;
+		padding: inherit;
+	}
+	
+	p {
+		border: inherit;
+		padding: inherit;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="inherit-test">
+		Div
+		<h1>Heading</h1>
+		<p>
+			Paragraph <strong>strong</strong>
+		</p>
+		<button>Button</button>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>그룹 선택자</title>
+<style>
+	h1, h2 {
+		text-align: center;
+	}
+	
+	h1 {
+		color: brown;
+	}
+	
+	h2 {
+		color: coral;
+	}
+	
+	p.gray, p.red {
+		font-size: 13px;
+		margin-left: 20px;
+	}
+	
+	p.gray {
+		color: gray;
+	}
+	
+	p.red {
+		color: red;
+	}
+	
+	/* 아래에 있는 실습은 HTML을 수정하지 않는다. */
+	
+	/* red 클래스와 blue 클래스에 color를 blue로 설정한다. */
+	/* 단, strong태그 이외의 blue 클래스는 색상을 변경하지 않는다. */
+	.red, strong.blue {
+		color: blue;
+	}
+	
+	/* p태그 안에 class가 blue인 strong태그는 초록색으로 글자색을 변경한다. */
+	p.red strong.blue {
+		color: green;
+	}
+	
+</style>
+</head>
+<body>
+	<h1 class="gray">그룹(group) 선택자</h1>
+	<h2 class="blue">선택자를 이용해 스타일을 정의하다 보면 여러 선택자에 공통된 스타일이 사용되는 경우가 있다.</h2>
+	<p class="gray">
+		이럴 때에는 쉼표로 구분해서 여러 선택자를 나열한 후 스타일을 한 번만 정의하면 소스코드 작성이 간편해진다.
+	</p>
+	<p class="red">
+		예를 들어 h1태그와 h2태그를 사용한 내용을 모두 화면 중앙에 정렬하고 싶다면 
+		그룹 선택자에 h1, h2 {<strong class="blue">text-align: center;</strong>}로 스타일을 정의할 수 있다.
+	</p>
+	<p>
+		<strong>끝</strong>
+	</p>
+	<strong class="blue">.</strong>
+</body>
+</html>
